@@ -14,25 +14,64 @@
         <header class="l-hd" id="header">
             <div class="p-hd">
                 <div class="p-hd__logo">
-                    <div class="p-hd__logo-img">
-                        <picture>
-                            <source media="(min-width:768px)" srcset="images/common/hd_logo.png.webp 1x,
+                    <a href="/" class="p-hd__logo-link">
+                        <div class="p-hd__logo-img">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="images/common/hd_logo.png.webp 1x,
                             images/common/hd_logo@2x.png.webp 2x">
-                            <source media="(max-width:767px)" srcset="images/common/hd_logo-sp.png.webp 1x,
+                                <source media="(max-width:767px)" srcset="images/common/hd_logo-sp.png.webp 1x,
                             images/common/hd_logo-sp@2x.png.webp 2x">
-                            <img src="images/common/hd_logo.png.webp" width="145" height="42" alt="佐渡の海鮮居酒屋 うめぇっちゃ"
-                                class="img">
-                        </picture>
-                    </div>
+                                <img src="images/common/hd_logo.png.webp" width="145" height="42" alt="佐渡の海鮮居酒屋 うめぇっちゃ"
+                                    class="-img">
+                            </picture>
+                        </div>
+                    </a>
                 </div>
                 <nav class="p-hd__nav" id="header-nav">
-
+                    <ul class="p-hd__list">
+                        <li class="p-hd__item">
+                            <a href="" class="p-hd__link u-hover-line" href="#message"><span
+                                    class="u-hover-line-child">ご挨拶</span></a>
+                        </li>
+                        <li class="p-hd__item">
+                            <a href="" class="p-hd__link u-hover-line" href="#owner-person"><span
+                                    class="u-hover-line-child">店主紹介</span></a>
+                        </li>
+                        <li class="p-hd__item">
+                            <a href="" class="p-hd__link u-hover-line" href="#shop-info"><span
+                                    class="u-hover-line-child">店舗情報</span></a>
+                        </li>
+                        <li class="p-hd__item">
+                            <a href="" class="p-hd__link u-hover-line" href="#access"><span
+                                    class="u-hover-line-child">アクセス</span></a>
+                        </li>
+                        <li class="p-hd__item">
+                            <a href="" class="p-hd__link p-hd__link--reserve-link" href="#reserve-info">ご予約</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
 
         <main class="l-main" id="main_area">
-            <div class="l-home-firstview" id="firstview"></div>
+            <div class="l-home-firstview" id="firstview">
+                <div class="p-home-kv__bgimg">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="images/home/kv_image.jpg.webp 1x, images/home/kv_image@2x.jpg.webp 2x">
+                        <source media="(max-width: 767px)" srcset="images/home/kv_image_sp.jpg.webp">
+                        <img src="images/home/kv_image.jpg.webp" width="1600" height="700" alt="佐渡の海鮮居酒屋 うめぇっちゃ背景"
+                            class="-img">
+                    </picture>
+                </div>
+                <div class="p-home-kv__logo">
+                    <picture>
+                        <source srcset="images/home/kv_logo.png.webp 1x, images/home/kv_logo@2x.png.webp 2x">
+                        <img src="images/home/kv_logo.png.webp" width="598" height="171" alt="佐渡の海鮮居酒屋 うめぇっちゃロゴ"
+                            class="-img">
+                    </picture>
+                </div>
+            </div>
             <section class="l-section" id="message"></section>
             <section class="l-section" id="owner-person"></section>
             <section class="l-section" id="shop-info"></section>

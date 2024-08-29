@@ -3,7 +3,7 @@
 /*                reset
 ======================================================= */
 @include reset;
-/*                leyout
+/*                layout
 ======================================================= */
   .c-width {
     max-width: 940px;
@@ -22,6 +22,37 @@
   .mintyo{
     font-family: $fontMintyo;
   }
+
+/*                utility
+======================================================= */
+@media only screen and (min-width: 768px){
+  .u-hover-line{
+    &:hover{
+      .u-hover-line-child{
+        &::before{
+          opacity: 1;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+  .u-hover-line-child{
+    position: relative;
+    &::before{
+      display: block;
+      width: 0;
+      height: 1px;
+      left: 50%;
+      bottom: -0.3em;
+      content: "";
+      background: $siteColor;
+      position: absolute;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+  }
+}
 
 /*                sp_menu
 ======================================================= */

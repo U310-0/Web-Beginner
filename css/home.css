@@ -11,8 +11,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -95,7 +94,7 @@ a {
   cursor: pointer;
 }
 
-/*                leyout
+/*                layout
 ======================================================= */
 .c-width {
   max-width: 940px;
@@ -128,6 +127,30 @@ a {
   font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
 }
 
+/*                utility
+======================================================= */
+@media only screen and (min-width: 768px) {
+  .u-hover-line:hover .u-hover-line-child::before {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+  .u-hover-line-child {
+    position: relative;
+  }
+  .u-hover-line-child::before {
+    display: block;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    bottom: -0.3em;
+    content: "";
+    background: #122444;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
 /*                sp_menu
 ======================================================= */
 html.is-fixed {
@@ -146,4 +169,4 @@ html.is-fixed {
   .l-main {
     padding: 0 0 96px;
   }
-}
+}/*# sourceMappingURL=home.css.map */
