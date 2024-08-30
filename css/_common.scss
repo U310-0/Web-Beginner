@@ -25,6 +25,19 @@
     line-height: 2.6;
   }
 
+  .c-grid-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 20px;
+  }
+
+  .c-grid-images__item{
+    //.c-grid-images__item--grid-large
+    &--grid-large{
+      grid-column: span 2;
+    }
+  }
+
 /*                テキスト装飾
 ======================================================= */
   .text_right,.alignright{ text-align:right;}
