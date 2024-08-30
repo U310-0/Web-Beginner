@@ -7,9 +7,18 @@
 ======================================================= */
   .l-wrapper {
     overflow: hidden;
+    padding-top: 80px;
   /*                header
 ======================================================= */
   } //@mixin
+
+  .l-hd{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
   /*header-logo*/
   .p-hd{
