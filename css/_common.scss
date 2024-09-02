@@ -133,6 +133,25 @@
   }
 }
 
+/*                footer
+======================================================= */
+.l-ft {
+  padding: 54px 0 35px;
+  background: $darkBlue;
+}
+
+.p-ft__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.p-ft__copyright {
+  margin-top: 46px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: block;
+}
 /*                sp_menu
 ======================================================= */
   html {
