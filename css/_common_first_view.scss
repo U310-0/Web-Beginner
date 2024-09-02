@@ -12,7 +12,7 @@
 ======================================================= */
   } //@mixin
 
-  .l-hd{
+  .l-hd {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -21,7 +21,7 @@
   }
 
   /*header-logo*/
-  .p-hd{
+  .p-hd {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,17 +35,17 @@
   }
 
   /*header__nav*/
-  .p-hd__nav{
+  .p-hd__nav {
     height: 100%;
   }
-  .p-hd__list{
+  .p-hd__list {
     display: flex;
     height: 100%;
   }
-  .p-hd__item{
+  .p-hd__item {
     height: 100%;
   }
-  .p-hd__link{
+  .p-hd__link {
     padding: 0 1.5em;
     height: 100%;
     display: flex;
@@ -56,15 +56,15 @@
     letter-spacing: 0.1em;
 
     // .p-hd__link--reserve-link
-    &--reserve-link{
+    &--reserve-link {
       margin-left: 2em;
       min-width: 150px;
       background: $siteColor;
       color: #fff;
 
-      @media only screen and (min-width: 768px){
+      @media only screen and (min-width: 768px) {
         transition: all 0.5s;
-        &:hover{
+        &:hover {
           background: $orange;
         }
       }

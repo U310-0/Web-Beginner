@@ -17,32 +17,62 @@
   }
 }
 
-.l-section{
+.l-section {
   padding-top: 180px;
 }
 
-.p-section{
+.p-section {
   padding: 0 50px;
+  //.p-section--gallery
+  &--gallery {
+    margin-top: 165px;
+  }
+  //.p-section-sns
+  &--sns {
+    margin-top: 65px;
+  }
 }
 
-.p-message-text{
+.p-message-text {
   margin-top: 38px;
 }
 
-.p-owner-introduction{
+.p-owner-introduction {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 40px;
 }
 
-.p-owner-introduction__img{
+.p-owner-introduction__img {
   border-radius: 50%;
   overflow: hidden;
   max-width: 300px;
   margin: auto;
 }
 
-.p-owner-introduction__text{
+.p-owner-introduction__text {
   margin-top: 52px;
+}
+
+
+/*                shop-info ご予約
+======================================================= */
+
+.p-sns-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 30px;
+  width: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .p-sns-icons__item {
+    top: 0;
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      top: -4px;
+    }
+  }
 }
